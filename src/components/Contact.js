@@ -63,7 +63,7 @@ export const Contact = () => {
                   onChange={handleOnChange}
                   required
                   name="fName"
-                  placeholder="Sam"
+                  placeholder="Same"
                 />
               </Form.Group>
               <Form.Group className="mb-3" controlId="formBasicPassword">
@@ -91,12 +91,15 @@ export const Contact = () => {
                   onChange={handleOnChange}
                   required
                   type="email"
+                  name="lName"
                   placeholder="sam@email.com"
                 />
               </Form.Group>
+
               <Form.Group className="mb-3" controlId="formBasicEmail">
                 <Form.Label>Message *</Form.Label>
                 <Form.Control
+                  name="message"
                   onChange={handleOnChange}
                   as={"textarea"}
                   rows="10"
