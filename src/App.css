@@ -1,0 +1,112 @@
+.topNav {
+  background: yellowgreen;
+}
+.hero {
+  background: url(./assets/vaccuum.jpg) center center;
+  background-size: cover;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-info {
+  background: rgba(0, 0, 0, 0.574);
+  color: white;
+  padding: 2rem;
+  width: 450px;
+  border-radius: 10px;
+}
+
+/* .hero img {
+  max-width: 400px;
+} */
+
+/* title */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 4rem;
+}
+
+.title span {
+  border-bottom: 5px solid yellowgreen;
+  padding: 0.5rem 1rem;
+}
+
+/* icons */
+.icons {
+  font-size: 2rem;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.icons div {
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons i {
+  font-size: 5rem;
+}
+
+i.fa-figma {
+  background: linear-gradient(
+    180deg,
+    #ee1414 0%,
+    #d012d3 38.02%,
+    #120eb6 66.15%,
+    #14b70e 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+/* Project section */
+.projects {
+  background: rgba(231, 213, 118, 0.41);
+}
+
+.contact {
+  background: rgba(153, 205, 50, 0.548);
+  margin-top: 5rem;
+}
+
+#goup {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  font-size: 3rem;
+}
+
+.main-layout {
+  min-height: 75vh;
+}
+
+/* contact form */
+
+.contact-form {
+  margin-top: 5rem;
+  border: 1px solid rgba(128, 128, 128, 0.416);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: -5px 5px 10px rgba(128, 128, 128, 0.34);
+}
+
+/* about us page */
+.about-hero {
+  background: url(./assets/dark.jpg) center center;
+  background-size: cover;
+  min-height: 60vh;
+  background-attachment: fixed;
+}
