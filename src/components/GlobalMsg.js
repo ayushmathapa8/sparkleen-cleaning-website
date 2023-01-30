@@ -10,9 +10,9 @@ export const GlobalMsg = () => {
           <i class="fa-solid fa-phone-volume"></i> 1800 KLEEN
         </Col>
         <Col className="bg-success text-light text-center">
-          <Link className="nav-link">
+          <a href="/booking" className="nav-link">
             <i class="fa-solid fa-mobile-retro"></i> Book Now
-          </Link>
+          </a>
         </Col>
       </Row>
     </Container>
