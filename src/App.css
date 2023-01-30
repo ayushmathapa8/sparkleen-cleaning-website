@@ -18,10 +18,6 @@
   border-radius: 10px;
 }
 
-/* .hero img {
-  max-width: 400px;
-} */
-
 /* title */
 .title {
   font-size: 2rem;
@@ -54,26 +50,7 @@
   align-items: center;
 }
 
-.icons i {
-  font-size: 5rem;
-}
-
-i.fa-figma {
-  background: linear-gradient(
-    180deg,
-    #ee1414 0%,
-    #d012d3 38.02%,
-    #120eb6 66.15%,
-    #14b70e 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
-/* Project section */
-.projects {
+.services {
   background: rgba(231, 213, 118, 0.41);
 }
 

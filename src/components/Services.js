@@ -8,7 +8,7 @@ import { Layout } from "./Layout";
 export const Services = () => {
   return (
     <Layout>
-      <div id="projects" class="projects py-3">
+      <div id="services" class="services py-3">
         <div class="title">
           <span>Our Services</span>
         </div>
