@@ -19,8 +19,8 @@ export const Contact = () => {
   const handleOnSubmit = async (e) => {
     e.preventDefault();
 
-    // const response = await axios(apiEndpoint, form);
-    // alert(response?.data?.message);
+    console.log(form);
+    alert("Your form has been submitted. Check console for the data");
   };
   return (
     <Layout>

@@ -1,33 +1,133 @@
-import React from "react";
+import React, { useState } from "react";
 import { Layout } from "./Layout";
+import { Col, Container, Form, Row, Button } from "react-bootstrap";
 
 export const Booking = () => {
+  const [form, setForm] = useState({});
+
+  const handleOnChange = (e) => {
+    const { value, name } = e.target;
+
+    setForm({
+      ...form,
+      [name]: value,
+    });
+  };
+
+  const handleOnSubmit = async (e) => {
+    e.preventDefault();
+
+    console.log(form);
+    alert("Your form has been submitted. Check console for the data");
+  };
+
   return (
     <Layout>
-      <div id="contact" className="container contact rounded-5 p-3 ">
-        <div class="title">
-          <span>Contact Me</span>
-        </div>
+      <Container>
+        <Row className="mt-5">
+          <Col>
+            <div class="title">
+              <span>Service Booking Online</span>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <Col className="contact-form mt-5">
+            <Form onSubmit={handleOnSubmit}>
+              <p>
+                Your cleaning solution is on call away. Our expert is wait to
+                server you the best way possible. If you need any cleaning
+                service, you can book though the online form below
+              </p>
+              <hr />
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label>First Name *</Form.Label>
+                <Form.Control
+                  onChange={handleOnChange}
+                  required
+                  name="fName"
+                  placeholder="Sam"
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label>Last Name</Form.Label>
+                <Form.Control
+                  onChange={handleOnChange}
+                  name="lName"
+                  placeholder="Smith"
+                />
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicPassword">
+                <Form.Label>Phone *</Form.Label>
+                <Form.Control
+                  onChange={handleOnChange}
+                  required
+                  name="phone"
+                  type="number"
+                  placeholder="04xxxxxxx"
+                />
+              </Form.Group>
 
-        {/* <!-- icons to links --> */}
-        <div class="row mb-5">
-          <div class="col fa-3x d-flex justify-content-between px-5">
-            {/* <!-- <a href="tel:041234567"><i class="fa-solid fa-mobile"></i></a> --> */}
-            <a href="mailto:your@email.com">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/prem-acharya/" target="_blank">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-youtube"></i>
-            </a>
-          </div>
-        </div>
-      </div>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Email address *</Form.Label>
+                <Form.Control
+                  onChange={handleOnChange}
+                  required
+                  name="email"
+                  type="email"
+                  placeholder="sam@email.com"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Date *</Form.Label>
+                <Form.Control
+                  name="date"
+                  onChange={handleOnChange}
+                  required
+                  type="date"
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Service *</Form.Label>
+
+                <Form.Select name="service" required>
+                  <option value=""> -- select --</option>
+                  <option value="Office Cleaning">Office Cleaning</option>
+                  <option value="Retailer Cleaning">Retailer Cleaning</option>
+                  <option value="Covid Cleaning">Covid Cleaning</option>
+                  <option value="Others">Others</option>
+                </Form.Select>
+              </Form.Group>
+
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Message *</Form.Label>
+                <Form.Control
+                  name="message"
+                  onChange={handleOnChange}
+                  as={"textarea"}
+                  rows="10"
+                  cols={30}
+                  placeholder="Leave us a detail messages"
+                  required
+                />
+              </Form.Group>
+
+              <Form.Group className="mb-3" controlId="formBasicCheckbox">
+                <Form.Check
+                  required
+                  type="checkbox"
+                  label="I allow to contact me via email or phone."
+                />
+              </Form.Group>
+              <Button variant="primary" type="submit">
+                Book Now
+              </Button>
+            </Form>
+          </Col>
+        </Row>
+      </Container>
     </Layout>
   );
 };

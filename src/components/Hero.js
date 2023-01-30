@@ -1,5 +1,4 @@
 import React from "react";
-// import prem from "../assets/prem.png";
 import { Layout } from "./Layout";
 
 export const Hero = () => {

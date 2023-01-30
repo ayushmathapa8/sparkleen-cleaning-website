@@ -9,21 +9,21 @@ export const AboutMe = () => {
         </div>
         <div className="about-hero"></div>
 
-        {/* <img src={dark} alt="some img" width="100%" /> */}
         <div className="container mt-3">
           <div class="row">
-            <div class="col-md-8">
+            <div class="col">
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
-                ipsam ad fuga, cumque qui fugit inventore vel deleniti minus
-                tempore officiis eius blanditiis iusto perferendis officia odit
-                atque asperiores soluta.
+                Established in 2022, Sparkleen Commercial Cleaning is a 100%
+                Australian owned company specialising in cleaning services
+                across a broad range of industries including office/commercial,
+                aged care & retirement, education, childcare, retail, medical,
+                industrial, sports and hospitality.
               </p>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
-                ipsam ad fuga, cumque qui fugit inventore vel deleniti minus
-                tempore officiis eius blanditiis iusto perferendis officia odit
-                atque asperiores soluta.
+                We have built our business on the values of honesty, integrity
+                and reliability, providing premium, and bespoke cleaning
+                solutions to a range of small, medium and large businesses, all
+                over Australia.
               </p>
             </div>
           </div>
