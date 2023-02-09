@@ -1,8 +1,20 @@
 .topNav {
   background: yellowgreen;
 }
+
+.logo {
+  text-decoration: none;
+  background: linear-gradient(to right, red, green);
+  padding: 5px 1rem;
+  letter-spacing: 0.2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .hero {
-  background: url(./assets/vaccuum.jpg) center center;
+  background: url(./assets/p4.jpg) center center;
   background-size: cover;
   min-height: 80vh;
   display: flex;
@@ -11,7 +23,7 @@
 }
 
 .hero-info {
-  background: rgba(0, 0, 0, 0.574);
+  background: rgba(0, 0, 0, 0.673);
   color: white;
   padding: 2rem;
   width: 450px;

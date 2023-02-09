@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Layout } from "./Layout";
 import { Col, Container, Form, Row, Button } from "react-bootstrap";
+import axios from "axios";
+
+const bookingAPI = "http://localhost:8000/booking";
 
 export const Booking = () => {
   const [form, setForm] = useState({});
@@ -15,10 +18,10 @@ export const Booking = () => {
   };
 
   const handleOnSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); //prevent from browser to reload
 
-    console.log(form);
-    alert("Your form has been submitted. Check console for the data");
+    const response = await axios.post(bookingAPI, form);
+    alert(response.data.message);
   };
 
   return (

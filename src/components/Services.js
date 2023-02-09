@@ -66,7 +66,7 @@ export const Services = () => {
                 objects and in inaccessible areas that couldn’t be reached with
                 conventional cleaning methods. Fogging has been found to be
                 effective against a wide range of bacteria, viruses, fungi and
-                spores depending on the disinfectant used
+                spores depending on the disinfectant used.
               </p>
             </div>
           </div>
@@ -87,7 +87,7 @@ export const Services = () => {
                 street front stores and small, medium and large shopping
                 centres, for quite some time, and have been responsible for the
                 maintenance of a large number of sites throughout Perth,
-                Brisbane, Sydney, Melbourne, Adelaide and Auckland.
+                Brisbane, Sydney, Melbourne and Adelaide.
               </p>
               <p>
                 Our comprehensive range of ancillary cleaning services,

@@ -9,8 +9,8 @@ export const Hero = () => {
           <div className="title">Best Cleaning Service in Sydney</div>
           <hr />
           <p>
-            We are team of expert who first priority is the coustomer's
-            satisfaction when it come to cleaning
+            We are team of expert who first priority is the customer's
+            satisfaction when it come to commercial cleaning.
           </p>
         </div>
       </section>

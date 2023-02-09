@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/logo.png";
 
 import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
@@ -11,8 +10,7 @@ export const TopNav = () => {
       <GlobalMsg />
       <Navbar expand="md" className="topNav" id="navbar" collapseOnSelect>
         <Container>
-          <Link to="/">
-            {/* <img src={logo} alt="logo" width="60px" /> */}
+          <Link to="/" className="logo">
             Sparkleen
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

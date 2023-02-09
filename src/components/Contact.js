@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Col, Container, Form, Row, Button } from "react-bootstrap";
 import { Layout } from "./Layout";
+import axios from "axios";
 
-const apiEndpoint = "";
+const contactAPI = "http://localhost:8000/contact";
 
 export const Contact = () => {
   const [form, setForm] = useState({});
@@ -17,10 +18,10 @@ export const Contact = () => {
   };
 
   const handleOnSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault(); //prevent from browser to reload
 
-    console.log(form);
-    alert("Your form has been submitted. Check console for the data");
+    const response = await axios.post(contactAPI, form);
+    alert(response.data.message);
   };
   return (
     <Layout>
@@ -91,7 +92,7 @@ export const Contact = () => {
                   onChange={handleOnChange}
                   required
                   type="email"
-                  name="lName"
+                  name="email"
                   placeholder="sam@email.com"
                 />
               </Form.Group>
